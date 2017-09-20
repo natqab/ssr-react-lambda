@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "temp",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "lib": [
+      "es6", "es7", "es2015", "es2016", "es2017", "dom"
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": false,
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "noImplicitAny": true,
+    "noStrictGenericChecks": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "sourceMap": false,
+    "strictNullChecks": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "temp"
+  ]
+}
