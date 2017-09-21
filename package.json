@@ -4,8 +4,10 @@
   "description": "A basic example of how to render React components server-side using AWS Lambda and API Gateway",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && rollup -c && node dist/index.js",
-    "build": "tsc && rollup -c"
+    "start" : "tsc && rollup -c && node dist/index.js",
+    "build" : "tsc && rollup -c && npm run build:node_modules && npm run zip",
+    "build:node_modules": "cp -R node_modules/ dist/node_modules/",
+    "zip"   : "cd dist && zip -r ../lambda_source.zip *"
   },
   "author": "Natalie Qabazard",
   "devDependencies": {

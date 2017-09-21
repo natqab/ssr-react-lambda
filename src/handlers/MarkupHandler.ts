@@ -8,7 +8,6 @@ MarkupHandler.get('/', function(request: Request, response: Response, next: Next
   const html = renderToString(createElement(HelloWorld as any));
   request = request;
   response.send(html);
-
   next();
 });
 

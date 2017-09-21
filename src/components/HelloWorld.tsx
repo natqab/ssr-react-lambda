@@ -13,10 +13,21 @@ class HelloWorld extends React.Component<void, HelloWorldState> {
   }
 
   render() {
+    const backgroundStyles = {
+      backgroundColor: 'black',
+      height: '100%',
+      width: '100%'
+    };
+    const textStyles = {
+      color: 'white',
+      textAlign: 'center',
+      paddingTop: '25%',
+      paddingBottom: '25%'
+    };
+
     return (
-      <div>
-        <h1>HI WORLD HIIIII</h1>
-        <button>BUTTON CLICK ME</button>
+      <div style={backgroundStyles}>
+        <h1 style={textStyles}>hello boston!</h1>
       </div>
     );
   }
